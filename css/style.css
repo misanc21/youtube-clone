@@ -67,8 +67,19 @@ table {
 }
 
 .b-logo{
+  display: flex;
+}
+
+.b-logo__svg-logo {
   width: 80px;
   height: 24px;
+}
+
+.b-logo__country-code {
+  color: #606060;
+  margin-left: 2px;
+  font-family: Roboto, sans-serif;
+  font-size: 10px;
 }
 
 .b-icons {
