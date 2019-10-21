@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -83,12 +84,20 @@ table {
 }
 
 .b-icons {
+  color: #606060;
   border: 1px solid red;
   width: 220px;
   height: 40px;
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
+.b-icons__icon{
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+}
 
 
 
