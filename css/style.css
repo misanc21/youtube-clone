@@ -49,15 +49,17 @@ table {
 }
 
 
-
+body {
+  background-color: #f9f9f9;
+}
 
 
 .l-header{
 	height: 56px;
-	border: 1px solid black;
 	display: flex;
   align-items: center;
   padding: 0 8px;
+  background-color: #fff;
 }
 
 .b-hamburger {
@@ -85,7 +87,6 @@ table {
 
 .b-icons {
   color: #606060;
-  border: 1px solid red;
   width: 220px;
   height: 40px;
   margin-left: auto;
@@ -97,9 +98,24 @@ table {
   width: 24px;
   height: 24px;
   padding: 8px;
+  fill: currentColor;
 }
 
+.b-icons__profile-picture {
+  border-radius: 50%;
+  padding: 1px 6px;
+  margin: 0 8px;
+}
 
+@media (min-width: 650px) {
+  .l-header {
+    padding: 0 16px;
+  }
+
+  .b-hamburger {
+    margin-right: 16px;
+  }
+}
 
 
 
