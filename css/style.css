@@ -65,6 +65,7 @@ body {
   width: 100vw;
   top: 0;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .b-header-left{
@@ -160,7 +161,16 @@ body {
 
 .b-video-meta__menu-container {
   height: 40px;
-  border: 3px solid black;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.b-video-meta__viewcount-container {
+
+}
+
+.b-video-meta__buttons-container {
   display: flex;
 }
 
@@ -187,6 +197,8 @@ body {
   cursor: pointer;
   color: #606060;
 }
+
+
 
 @media (min-width: 656px) {
   .l-header {
@@ -270,6 +282,17 @@ body {
 
   .b-icons__profile-picture {
     margin-right: 4px;
+  }
+
+  .b-video-meta__viewcount {
+    display: block;
+    font-size: 14px;
+    font-family: Roboto, Arial, sans-serif;
+    color: #606060;
+    line-height: 21px;
+    height: 40px;
+    display: flex;
+    align-items: center;
   }
 }
 
