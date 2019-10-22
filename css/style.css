@@ -92,6 +92,7 @@ body {
   margin-left: auto;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .b-icons__icon{
@@ -99,6 +100,8 @@ body {
   height: 24px;
   padding: 8px;
   fill: currentColor;
+  pointer-events: none;
+  display: block;
 }
 
 .b-icons__profile-picture {
@@ -107,13 +110,23 @@ body {
   margin: 0 8px;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 656px) {
   .l-header {
     padding: 0 16px;
   }
 
   .b-hamburger {
     margin-right: 16px;
+  }
+
+  .b-icons__search-icon{
+    display: none;
+
+  }
+
+  .b-search-box{
+    height: 32px;
+    margin: 0 40px;
   }
 }
 
