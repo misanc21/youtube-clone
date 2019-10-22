@@ -2,7 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -163,16 +164,28 @@ body {
   display: flex;
 }
 
-.b-video_meta__button {
+.b-video-meta__button{
   color: #909090;
-  fill: currentColor;
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
 }
 
 .b-video_meta__icon {
+  fill: currentColor;
   pointer-events: none;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+}
+
+.b-video-meta__button-description{
+  font-size: 13px;
+  font-family: roboto, arial, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  color: #606060;
 }
 
 @media (min-width: 656px) {
