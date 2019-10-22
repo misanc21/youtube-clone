@@ -146,7 +146,7 @@ body {
 
 .b-video-meta{
   padding: 20px 0px 8px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.10)
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
 }
 
 .b-video-meta__title {
@@ -196,6 +196,16 @@ body {
   font-weight: 500;
   cursor: pointer;
   color: #606060;
+}
+
+.b-video-description{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+  padding-top: 16px;
+  margin-bottom: 12px;
+
+}
+.b-video-description__user-picture{
+  border-radius: 50%
 }
 
 
