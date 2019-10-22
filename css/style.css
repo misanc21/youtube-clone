@@ -135,9 +135,17 @@ body {
 
   .b-search-box__form {
     display: flex;
-    border: 1px solid #d3d3d3;
+    border: 1px solid #ccc;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
+  }
+
+  .b-search-box__input {
+    border: 0;
+    font-family: Roboto, Arial, sans-serif;
+    padding: 1px 0 1px 11px;
+    font-size: 16px;
+
   }
 
   .b-search-box__button {
@@ -147,13 +155,10 @@ body {
     height: 32px;
     width: 65px;
     background-color: #f8f8f8;
-    color: #333;
-    opacity: 0.6;
+    color: #828282;
     padding: 1px 7px 2px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #d8d8d8 rgb(209, 209, 209) #bababa;
-    border-image: initial;
+    border: 0;
+    border-left: 1px solid #ccc;
   }
 
   .b-search-box__search-icon{
@@ -162,6 +167,15 @@ body {
     display: block;
     width: 20px;
     height: 20px;
+  }
+
+  .b-icons__icon {
+    margin: 0 8px 0 0;
+    padding: 8px;
+  }
+
+  .b-icons__profile-picture {
+    margin-right: 4px;
   }
 }
 
