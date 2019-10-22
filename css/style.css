@@ -135,24 +135,33 @@ body {
 
   .b-search-box__form {
     display: flex;
-  }
-
-  .b-search-box__button {
-    height: 32px;
-    width: 65px;
-    background-color: #f8f8f8;
-    color: rgba(0, 0, 0, 0.847);
     border: 1px solid #d3d3d3;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
   }
 
-  .b-search-box__search-icon {
+  .b-search-box__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 65px;
+    background-color: #f8f8f8;
+    color: #333;
+    opacity: 0.6;
+    padding: 1px 7px 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d8d8d8 rgb(209, 209, 209) #bababa;
+    border-image: initial;
+  }
+
+  .b-search-box__search-icon{
     fill: currentColor;
     pointer-events: none;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 20px;
+    height: 20px;
   }
 }
 
