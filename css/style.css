@@ -182,10 +182,11 @@ body {
 }
 
 .b-video-description__badge {
+  display: inline-block;
+  margin-bottom: -1px;
   color: rgba(17, 17, 17, 0.4);
   fill: currentColor;
   pointer-events: none;
-  display: block;
   width: 13px;
   height: 13px;
 }
@@ -219,9 +220,9 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.10);
   padding-top: 16px;
   margin-bottom: 12px;
-  display: flex;
 
 }
+
 .b-video-description__user-picture{
   border-radius: 50%;
   margin-right: 16px;
@@ -229,9 +230,15 @@ body {
 
 .b-video-description__button-subscribe {
   margin-left: auto;
-  width: 200px;
-  height: 50px;
-  background-color: red;
+  width: 126px;
+  background-color: #c00;
+  color: #fff;
+  font-family: roboto, arial, sans-serif;
+  font-size: 14px;
+  border-radius: 2px;
+  outline: none;
+  padding: 10px 16px;
+  border: none;
 }
 
 .b-video-description__user-subscribers {
@@ -239,6 +246,19 @@ body {
   font-size: 13px;
   line-height: 18px;
   color: #606060;
+}
+
+.b-video-description__user-data{
+  align-items: center;
+  display: flex;
+}
+
+.b-video-description__video-text{
+  margin-left: 64px;
+  margin-top: 12px;
+  font-family: roboto, arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 
