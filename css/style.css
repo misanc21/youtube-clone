@@ -132,7 +132,6 @@ body {
 .l-main{
   margin-top: 56px;
   height: 200vh;
-  border: 1px solid;
   padding: 24px 24px 0px 24px;
 }
 
@@ -453,7 +452,20 @@ body {
   }
 }
 
+@media (min-width: 1000px) {
+  .l-main {
+    display: flex;
+  }
 
+  .l-content {
+    width: calc(100% - 402px);
+    padding-right: 24px;
+  }
+
+  .l-sidebar {
+    width: 402px;
+  }
+}
 
 
 
