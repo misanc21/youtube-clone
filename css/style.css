@@ -218,8 +218,8 @@ body {
 
 .b-video-description{
   border-bottom: 1px solid rgba(0, 0, 0, 0.10);
-  padding-top: 16px;
-  margin-bottom: 12px;
+  padding: 16px 0;
+  margin-bottom: 24px;
 
 }
 
@@ -261,6 +261,46 @@ body {
   line-height: 21px;
 }
 
+.b-video-description__show-more {
+  color: rgba(17, 17, 17, 0.6);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 21px;
+  border: none;
+  background: none;
+  margin: 28px 0 0 64px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.b-recommendations {
+
+}
+
+.b-recommendations__next {
+
+}
+
+.b-recommendations__next-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.b-recommendations__next-title {
+  color: #0d0d0d;
+  font-size: 16px;
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 20px;
+}
+
+.b-recommendations__auto-play {
+  color: #606060;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: Roboto, Arial, sans-serif;
+}
 
 @media (min-width: 656px) {
   .l-header {
