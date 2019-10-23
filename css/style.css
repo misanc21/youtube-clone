@@ -356,6 +356,10 @@ body {
   color: #606060;
 }
 
+.b-video-comments{
+  display: none;
+}
+
 
 
 @media (min-width: 656px) {
@@ -464,6 +468,14 @@ body {
 
   .l-sidebar {
     width: 402px;
+  }
+
+  .b-video-comments{
+    display: block;
+    padding: 16px;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
   }
 }
 
