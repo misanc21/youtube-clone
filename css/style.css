@@ -49,9 +49,15 @@ table {
   border-spacing: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 
 body {
   background-color: #f9f9f9;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 
@@ -92,7 +98,6 @@ body {
 .b-logo__country-code {
   color: #606060;
   margin-left: 2px;
-  font-family: Roboto, sans-serif;
   font-size: 10px;
 }
 
@@ -152,7 +157,6 @@ body {
 .b-video-meta__title {
   font-size: 18px;
   line-height: 24px;
-  font-family: Roboto, Arial, sans-serif;
 }
 
 .b-video-meta__viewcount {
@@ -175,7 +179,6 @@ body {
 }
 
 .b-video-description__user-name {
-  font-family: Roboto, Arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
@@ -210,7 +213,6 @@ body {
 
 .b-video-meta__button-description{
   font-size: 13px;
-  font-family: roboto, arial, sans-serif;
   font-weight: 500;
   cursor: pointer;
   color: #606060;
@@ -233,7 +235,6 @@ body {
   width: 126px;
   background-color: #c00;
   color: #fff;
-  font-family: roboto, arial, sans-serif;
   font-size: 14px;
   border-radius: 2px;
   outline: none;
@@ -243,7 +244,6 @@ body {
 }
 
 .b-video-description__user-subscribers {
-  font-family: Roboto, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #606060;
@@ -257,14 +257,12 @@ body {
 .b-video-description__video-text{
   margin-left: 64px;
   margin-top: 12px;
-  font-family: roboto, arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
 }
 
 .b-video-description__show-more {
   color: rgba(17, 17, 17, 0.6);
-  font-family: Roboto, Arial, sans-serif;
   font-size: 13px;
   font-weight: 500;
   line-height: 21px;
@@ -281,7 +279,7 @@ body {
 
 .b-recommendations__next {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   margin-bottom: 16px;
 }
 
@@ -289,12 +287,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 13px;
 }
 
 .b-recommendations__next-title {
   color: #0d0d0d;
   font-size: 16px;
-  font-family: Roboto, Arial, sans-serif;
   line-height: 20px;
 }
 
@@ -302,7 +300,6 @@ body {
   color: #606060;
   font-size: 13px;
   font-weight: 500;
-  font-family: Roboto, Arial, sans-serif;
   display: flex;
   margin-right: 8px;
 }
@@ -321,16 +318,46 @@ body {
   top: -3px;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.6);
 }
-.b-recommendations__auto-play-toggle-background{
+
+.b-recommendations__auto-play-toggle-background {
   width: 36px;
   height: 14px;
   background-color: #ccc;
   border-radius: 8px;
   opacity: 0.4;
 }
+
 .b-recommendations__video-item{
   display: flex;
+  margin-bottom: 8px;
 }
+
+.b-recommendations__video-item-thumbnail {
+  margin-right: 8px;
+  width: 168px;
+  height: 94px;
+}
+
+.b-recommendations__video-item-metadata {
+  padding-right: 24px;
+}
+
+.b-recommendations__video-item-title {
+  color: #0d0d0d;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.b-recommendations__video-item-username,
+.b-recommendations__video-item-viewcount {
+  font-size: 13px;
+  line-height: 18px;
+  color: #606060;
+}
+
+
 
 @media (min-width: 656px) {
   .l-header {
@@ -360,7 +387,6 @@ body {
 
   .b-search-box__input {
     border: 0;
-    font-family: Roboto, Arial, sans-serif;
     padding: 1px 0 1px 11px;
     font-size: 16px;
     width: 100%;
@@ -419,7 +445,6 @@ body {
   .b-video-meta__viewcount {
     display: block;
     font-size: 14px;
-    font-family: Roboto, Arial, sans-serif;
     color: #606060;
     line-height: 21px;
     height: 40px;
