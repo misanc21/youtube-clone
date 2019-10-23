@@ -1,0 +1,484 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+body {
+  background-color: #f9f9f9;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+
+.l-header{
+	height: 56px;
+	display: flex;
+  align-items: center;
+  padding: 0 8px;
+  background-color: #fff;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.b-header-left{
+  display: flex;
+  align-items: center;
+}
+
+.b-hamburger {
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  margin-right: 4px;
+}
+
+.b-logo{
+  display: flex;
+}
+
+.b-logo__svg-logo {
+  width: 80px;
+  height: 24px;
+}
+
+.b-logo__country-code {
+  color: #606060;
+  margin-left: 2px;
+  font-size: 10px;
+}
+
+.b-search-box {
+  display: none;
+}
+
+.b-icons {
+  color: #606060;
+  width: 220px;
+  height: 40px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.b-icons__icon{
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  fill: currentColor;
+  pointer-events: none;
+  display: block;
+}
+
+.b-icons__profile-picture {
+  border-radius: 50%;
+  padding: 1px 6px;
+  margin: 0 8px;
+}
+.l-main{
+  margin-top: 56px;
+  height: 200vh;
+  padding: 24px 24px 0px 24px;
+}
+
+.b-video-container{
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+ .b-video-container__video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.b-video-meta{
+  padding: 20px 0px 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.b-video-meta__title {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.b-video-meta__viewcount {
+  display: none;
+}
+
+.b-video-meta__menu-container {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.b-video-meta__viewcount-container {
+
+}
+
+.b-video-meta__buttons-container {
+  display: flex;
+}
+
+.b-video-description__user-name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.b-video-description__badge {
+  display: inline-block;
+  margin-bottom: -1px;
+  color: rgba(17, 17, 17, 0.4);
+  fill: currentColor;
+  pointer-events: none;
+  width: 13px;
+  height: 13px;
+}
+
+
+.b-video-meta__button{
+  color: #909090;
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+}
+
+.b-video_meta__icon {
+  fill: currentColor;
+  pointer-events: none;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+}
+
+.b-video-meta__button-description{
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #606060;
+}
+
+.b-video-description{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+  padding: 16px 0;
+  margin-bottom: 24px;
+
+}
+
+.b-video-description__user-picture{
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.b-video-description__button-subscribe {
+  margin-left: auto;
+  width: 126px;
+  background-color: #c00;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 2px;
+  outline: none;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.b-video-description__user-subscribers {
+  font-size: 13px;
+  line-height: 18px;
+  color: #606060;
+}
+
+.b-video-description__user-data{
+  align-items: center;
+  display: flex;
+}
+
+.b-video-description__video-text{
+  margin-left: 64px;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.b-video-description__show-more {
+  color: rgba(17, 17, 17, 0.6);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 21px;
+  border: none;
+  background: none;
+  margin: 28px 0 0 64px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.b-recommendations {
+
+}
+
+.b-recommendations__next {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.b-recommendations__next-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.b-recommendations__next-title {
+  color: #0d0d0d;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.b-recommendations__auto-play {
+  color: #606060;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  margin-right: 8px;
+}
+
+.b-recommendations__auto-play-toggle{
+  margin-left: 8px;
+  position: relative;
+}
+
+.b-recommendations__auto-play-toggle-circle{
+  width: 20px;
+  height: 20px;
+  background-color: #909090;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.6);
+}
+
+.b-recommendations__auto-play-toggle-background {
+  width: 36px;
+  height: 14px;
+  background-color: #ccc;
+  border-radius: 8px;
+  opacity: 0.4;
+}
+
+.b-recommendations__video-item{
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.b-recommendations__video-item-thumbnail {
+  margin-right: 8px;
+  width: 168px;
+  height: 94px;
+}
+
+.b-recommendations__video-item-metadata {
+  padding-right: 24px;
+}
+
+.b-recommendations__video-item-title {
+  color: #0d0d0d;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.b-recommendations__video-item-username,
+.b-recommendations__video-item-viewcount {
+  font-size: 13px;
+  line-height: 18px;
+  color: #606060;
+}
+
+.b-video-comments{
+  display: none;
+}
+
+
+
+@media (min-width: 656px) {
+  .l-header {
+    padding: 0 16px;
+    justify-content: space-between;
+  }
+
+  .b-hamburger {
+    margin-right: 16px;
+  }
+
+  .b-icons__search-icon{
+    display: none;
+  }
+
+  .b-search-box {
+    height: 32px;
+    margin: 0 40px;
+    display: block;
+    flex: 1;
+    max-width: 640px;
+  }
+
+  .b-search-box__form {
+    display: flex;
+  }
+
+  .b-search-box__input {
+    border: 0;
+    padding: 1px 0 1px 11px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+
+  .b-search-box__input:focus {
+    border: 1px solid #1c62b8;
+    outline:none;
+  }
+
+  .b-search-box__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 65px;
+    background-color: #f8f8f8;
+    color: #828282;
+    padding: 1px 7px 2px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    cursor: pointer;
+  }
+
+  .b-search-box__button:hover {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+
+  .b-search-box__search-icon{
+    fill: currentColor;
+    pointer-events: none;
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  .b-icons{
+    margin-left: initial;
+  }
+
+  .b-icons__icon {
+    margin: 0 8px 0 0;
+    padding: 8px;
+  }
+
+  .b-icons__profile-picture {
+    margin-right: 4px;
+  }
+
+  .b-video-meta__viewcount {
+    display: block;
+    font-size: 14px;
+    color: #606060;
+    line-height: 21px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .l-main {
+    display: flex;
+  }
+
+  .l-content {
+    width: calc(100% - 402px);
+    padding-right: 24px;
+  }
+
+  .l-sidebar {
+    width: 402px;
+  }
+
+  .b-video-comments{
+    display: block;
+    padding: 16px;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+
+
+
